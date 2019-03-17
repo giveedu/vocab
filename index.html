@@ -40,7 +40,10 @@
 
 	<div data-role="content">
 		<center><h2>Study</h2></center>
-		<p>Here is the questions page.</p>
+		<center><p>Please answer the question below:</p></center>
+		<center>
+			<p><b id="questions-text">Question Text</b></p>
+		</center>
 		<form>
 			<label for="questions-choice-a" id="questions-choice-text-a">A</label>
 			<input type="radio" name="questions-choice" id="questions-choice-a">
@@ -51,6 +54,14 @@
 			<label for="questions-choice-d" id="questions-choice-text-d">D</label>
 			<input type="radio" name="questions-choice" id="questions-choice-d">
 		</form>
+
+		<button class="ui-btn" id="questions-choice-submit">Check Answer</button>
+		<form>
+			<label for="questions-difficulty-slide">Difficulty Level:</label>
+			<input type="range" name="questions-difficulty-slide" id="questions-difficulty-slide" min="1" max="10" value="5">
+		</form>
+		<h3>How to Use</h3>
+		<p>In order to use the app, select a multiple choice answer and push "Check Answer".</p>
 	</div>
 
 	<div data-role="footer" data-position="fixed" data-theme="d">
@@ -94,6 +105,10 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$('#questions-text').text('Red is a ____.');
+</script>
 
 </body>
 </html>
