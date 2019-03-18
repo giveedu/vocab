@@ -1,8 +1,35 @@
+/*
+Sets the given answer, the correct answer, and changes the result text
+*/
 
-function changeAnswerResult(result) {
-	if(result) {
+var questionsCurGivenAnswer = "";
 
+function givenAnswerAccess() {
+	if(arguments.length === 0) {
+		return questionsCurGivenAnswer;
 	} else {
-		
+		questionsCurGivenAnswer = arguments[0];
+	}
+}
+
+var questionsCurCorrectAnswer = "";
+
+function correctAnswerAccess() {
+	if(arguments.length === 0) {
+		return questionsCurCorrectAnswer;
+	} else {
+		questionsCurCorrectAnswer = arguments[0];
+	}
+}
+
+
+function changeQsAnswerResult(result) {
+	var resultDiv = document.getElementById('#questions-answer-result');
+	if(result) {
+		resultDiv.style = "text-shadow:0 0 0; background:#6ccc59; border-radius: 20px; padding: 10px;";
+		resultDiv.innerHTML = '<p><b>Correct!</b></p><p>The correct answer is A.</p>';
+	} else {
+		resultDiv.style = "text-shadow:0 0 0; background:#dd6c6c; border-radius: 20px; padding: 10px;";
+		resultDiv.innerHTML = '<p><b>Wrong!</b></p><p>You answered A, but the correct answer is B.</p>';
 	}
 }
