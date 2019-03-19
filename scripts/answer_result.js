@@ -22,14 +22,18 @@ function correctAnswerAccess() {
 	}
 }
 
+function didGiveCorrectAnswer() {
+	return questionsCurGivenAnswer === questionsCurCorrectAnswer;
+}
+
 
 function changeQsAnswerResult(result) {
 	var resultDiv = document.getElementById('#questions-answer-result');
 	if(result) {
 		resultDiv.style = "text-shadow:0 0 0; background:#6ccc59; border-radius: 20px; padding: 10px;";
-		resultDiv.innerHTML = '<p><b>Correct!</b></p><p>The correct answer is A.</p>';
+		resultDiv.innerHTML = '<p><b>Right!</b></p><p>The correct answer is ' + correctAnswerAccess() + '.</p>';
 	} else {
 		resultDiv.style = "text-shadow:0 0 0; background:#dd6c6c; border-radius: 20px; padding: 10px;";
-		resultDiv.innerHTML = '<p><b>Wrong!</b></p><p>You answered A, but the correct answer is B.</p>';
+		resultDiv.innerHTML = '<p><b>Wrong!</b></p><p>You answered ' + givenAnswerAccess() + ', but the correct answer is ' + correctAnswerAccess() + '.</p>';
 	}
 }
