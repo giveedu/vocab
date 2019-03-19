@@ -29,6 +29,24 @@
  	  	d:'fall',
  	  	cor:'a',
  	  	lvl:2
+ 	  },
+ 	  {
+ 	  	text:'east is a _____.',
+ 	  	a:'place',
+ 	  	b:'direction',
+ 	  	c:'town',
+ 	  	d:'food',
+ 	  	cor:'b',
+ 	  	lvl:2
+ 	  },
+ 	  {
+ 	  	text:'_____ is a verb.',
+ 	  	a:'eating',
+ 	  	b:'gold',
+ 	  	c:'a walk',
+ 	  	d:'run',
+ 	  	cor:'d',
+ 	  	lvl:2
  	  }
 ]
 
