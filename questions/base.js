@@ -46,8 +46,36 @@
  	  	c:'a walk',
  	  	d:'run',
  	  	cor:'d',
+ 	  	lvl:3
+ 	  },
+ 	  {
+ 	  	text:'A puppy is an ______.',
+ 	  	a:'animal',
+ 	  	b:'cat',
+ 	  	c:'monkey',
+ 	  	d:'buddy',
+ 	  	cor:'a',
  	  	lvl:2
+ 	  },
+ 	  {
+ 	  	text:'To rob means to _____.',
+ 	  	a:'give',
+ 	  	b:'look',
+ 	  	c:'find',
+ 	  	d:'steal',
+ 	  	cor:'d',
+ 	  	lvl:1
+ 	  },
+ 	  {
+ 	  	text:'The _____ is blue.',
+ 	  	a:'grass',
+ 	  	b:'tree',
+ 	  	c:'sky',
+ 	  	d:'apple',
+ 	  	cor:'c',
+ 	  	lvl:1
  	  }
+
 ]
 
  function getQuestionsFromLevel(level) {
