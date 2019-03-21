@@ -8,7 +8,7 @@
  	  	a:'vegetable',
  	  	b:'meat',
  	  	c:'fruit',
- 	  	d:'animal'
+ 	  	d:'animal',
  	  	cor:'c',
  	  	lvl:1
  	  },
@@ -18,7 +18,7 @@
  	  	b:'colors',
  	  	c:'places',
  	  	d:'names',
- 	  	cor:'b'
+ 	  	cor:'b',
  	  	lvl:1
  	  },
  	  {
@@ -101,8 +101,9 @@
   	var query = [];
  	var i;
  	for(i = 0; i < QSBANK.qs.length; i++) {
- 		if(QSBANK.qs[i].lvl <= level)
+ 		if(QSBANK.qs[i].lvl <= level) {
  			query.push(QSBANK.qs[i]);
+ 		}
  	}
  	return query;	
  }
