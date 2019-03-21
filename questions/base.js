@@ -74,6 +74,15 @@
  	  	d:'apple',
  	  	cor:'c',
  	  	lvl:1
+ 	  },
+ 	  {
+ 	  	text:'I _____ to eat cake.',
+ 	  	a:'don\'t',
+ 	  	b:'will',
+ 	  	c:'like',
+ 	  	d:'before',
+ 	  	cor:'c',
+ 	  	lvl:1
  	  }
 
 ]
@@ -86,4 +95,14 @@
  			query.push(QSBANK.qs[i]);
  	}
  	return query;
+ }
+
+ function getQuestionsUpToLevel(level){
+  	var query = [];
+ 	var i;
+ 	for(i = 0; i < QSBANK.qs.length; i++) {
+ 		if(QSBANK.qs[i].lvl <= level)
+ 			query.push(QSBANK.qs[i]);
+ 	}
+ 	return query;	
  }

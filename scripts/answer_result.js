@@ -28,7 +28,7 @@ function didGiveCorrectAnswer() {
 
 
 function changeQsAnswerResult(result) {
-	var resultDiv = document.getElementById('#questions-answer-result');
+	var resultDiv = document.getElementById('questions-answer-result');
 	if(result) {
 		resultDiv.style = "text-shadow:0 0 0; background:#6ccc59; border-radius: 20px; padding: 10px;";
 		resultDiv.innerHTML = '<p><b>Right!</b></p><p>The correct answer is ' + correctAnswerAccess() + '.</p>';
