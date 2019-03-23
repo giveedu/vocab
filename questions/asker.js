@@ -4,7 +4,8 @@ var currentQuestionIndex = 0;
 var currentQuestionEndIndex = currentlyRetrievedQuestions.length;
 
 function IncrementCurrentQsIndex() {
-	if(++currentQuestionIndex == currentQuestionEndIndex)
+	currentQuestionIndex++;
+	if(currentQuestionIndex == currentQuestionEndIndex)
 		currentQuestionIndex = 0;
 }
 

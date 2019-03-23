@@ -47,13 +47,13 @@
 			<p><b>Question: </b><b id="questions-text">Question Text</b></p>
 		</center>
 		<form>
-			<label for="questions-choice-a" id="questions-choice-text-a">A</label>
+			<label for="questions-choice-a" ><div id="questions-choice-text-a">A</div></label>
 			<input type="radio" name="questions-choice" id="questions-choice-a">
-			<label for="questions-choice-b" id="questions-choice-text-b">B</label>
+			<label for="questions-choice-b"><div id="questions-choice-text-b">B</div></label>
 			<input type="radio" name="questions-choice" id="questions-choice-b">
-			<label for="questions-choice-c" id="questions-choice-text-c">C</label>
+			<label for="questions-choice-c"><div id="questions-choice-text-c">C</div></label>
 			<input type="radio" name="questions-choice" id="questions-choice-c">
-			<label for="questions-choice-d" id="questions-choice-text-d">D</label>
+			<label for="questions-choice-d"><div id="questions-choice-text-d">D</div></label>
 			<input type="radio" name="questions-choice" id="questions-choice-d">
 		</form>
 
@@ -133,7 +133,6 @@
 <script src="scripts/answer_result.js"></script>
 <script src="questions/asker.js"></script>
 <script>
-	// question script
 	function setUpQuestionsPage() {
 		$('#select-question-level').on('change', function(){
 			var selectedLevel = getCurrentlySelectedLevel();
@@ -142,6 +141,7 @@
 			loadCurrentQuestionToAsk();
 		});
 		setLevelOneQuestions();
+		resetCurrentQsIndex();
 		loadCurrentQuestionToAsk();
 	}
 	if(window.addEventListener) {
@@ -152,8 +152,6 @@
 		window.onload = setUpQuestionsPage; 
 	}
 	$('#questions-choice-submit').on('click', function(){
-		console.log(givenAnswerAccess());
-		console.log(correctAnswerAccess());
 		evaluateQuestionAnswerInput();
 		IncrementCurrentQsIndex();
 		changeQsAnswerResult(didGiveCorrectAnswer());
