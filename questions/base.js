@@ -83,6 +83,15 @@
  	  	d:'before',
  	  	cor:'c',
  	  	lvl:1
+ 	  },
+ 	  {
+ 	  	text:'Bravery means _______.',
+ 	  	a:'courage',
+ 	  	b:'fear',
+ 	  	c:'smart',
+ 	  	d:'horrible',
+ 	  	cor:'a',
+ 	  	lvl:4
  	  }
 
 ]

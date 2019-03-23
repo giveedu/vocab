@@ -16,7 +16,6 @@ function getCurrentlySelectedLevel() {
 	return level;
 }
 
-$('#select-question-level').on('change', function(){
-	var selectedLevel = getCurrentlySelectedLevel();
-	currentlyRetrievedQuestions = getQuestionsFromLevel(selectedLevel);
-});
+function setLevelOneQuestions() {
+	currentlyRetrievedQuestions = getQuestionsFromLevel(1);
+}

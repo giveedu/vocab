@@ -31,9 +31,9 @@ function changeQsAnswerResult(result) {
 	var resultDiv = document.getElementById('questions-answer-result');
 	if(result) {
 		resultDiv.style = "text-shadow:0 0 0; background:#6ccc59; border-radius: 20px; padding: 10px;";
-		resultDiv.innerHTML = '<p><b>Right!</b></p><p>The correct answer is ' + correctAnswerAccess() + '.</p>';
+		resultDiv.innerHTML = '<p><b>Right!</b></p><p>The correct answer was ' + correctAnswerAccess() + '.</p>';
 	} else {
 		resultDiv.style = "text-shadow:0 0 0; background:#dd6c6c; border-radius: 20px; padding: 10px;";
-		resultDiv.innerHTML = '<p><b>Wrong!</b></p><p>You answered ' + givenAnswerAccess() + ', but the correct answer is ' + correctAnswerAccess() + '.</p>';
+		resultDiv.innerHTML = '<p><b>Wrong!</b></p><p>You answered ' + givenAnswerAccess() + ', but the correct answer was ' + correctAnswerAccess() + '.</p>';
 	}
 }

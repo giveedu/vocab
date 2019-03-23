@@ -40,10 +40,7 @@
 	</div>
 
 	<div data-role="content">
-		<div id="questions-answer-result" style="text-shadow:0 0 0; background:#dd6c6c; border-radius: 20px; padding: 10px;">
-			<p><b>Correct!</b></p>
-			<p>The correct answer is A.</p>
-		</div>
+		<div id="questions-answer-result"></div>
 		<center><h2>Study</h2></center>
 		<center><p>Please answer the question below:</p></center>
 		<center>
@@ -134,8 +131,34 @@
 <script src="questions/base.js"></script>
 <script src="questions/retrieve.js"></script>
 <script src="scripts/answer_result.js"></script>
+<script src="questions/asker.js"></script>
 <script>
-	$('#questions-text').text('Red is a ____.');
+	// question script
+	function setUpQuestionsPage() {
+		$('#select-question-level').on('change', function(){
+			var selectedLevel = getCurrentlySelectedLevel();
+			currentlyRetrievedQuestions = getQuestionsFromLevel(selectedLevel);
+			resetCurrentQsIndex();
+			loadCurrentQuestionToAsk();
+		});
+		setLevelOneQuestions();
+		loadCurrentQuestionToAsk();
+	}
+	if(window.addEventListener) {
+		window.addEventListener("load", setUpQuestionsPage);
+	} else if(window.attachEvent) {
+		window.attachEvent("onload", setUpQuestionsPage);
+	} else {
+		window.onload = setUpQuestionsPage; 
+	}
+	$('#questions-choice-submit').on('click', function(){
+		console.log(givenAnswerAccess());
+		console.log(correctAnswerAccess());
+		evaluateQuestionAnswerInput();
+		IncrementCurrentQsIndex();
+		changeQsAnswerResult(didGiveCorrectAnswer());
+		loadCurrentQuestionToAsk();
+	});
 </script>
 
 </body>
