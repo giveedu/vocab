@@ -98,7 +98,9 @@
  	  {text:'Running is similar to _______.', a:'jogging', b:'walking', c:'crying', d:'pacing', cor:'b', lvl:4},
  	  {text:'Love means _____.', a:'like', b:'want', c:'hate', d:'despise', cor:'a', lvl:3},
  	  {text:'Rice is a ______.', a:'food', b:'thing', c:'rabbit', d:'animal', cor:'a', lvl:1},
- 	  {text:'Good is the opposite of ______.', a:'justice', b:'cruel', c:'evil', d:'horror', cor:'c', lvl:2}
+ 	  {text:'Good is the opposite of ______.', a:'justice', b:'cruel', c:'evil', d:'horror', cor:'c', lvl:2},
+ 	  {text:'A car is a ______.', a:'animal', b:'food', c:'vehicle', d:'boat', cor:'c', lvl:1},
+ 	  {text:'A teacher teaches ______.', a:'students', b:'friends', c:'colleagues', d:'people', cor:'a', lvl:1}
 
 ]
 
