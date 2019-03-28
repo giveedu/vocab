@@ -1,0 +1,14 @@
+.tcenter {
+	text-align: center;
+}
+
+img.icenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bcenter {
+	display: block;
+	margin: 0 auto;
+}

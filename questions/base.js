@@ -100,7 +100,9 @@
  	  {text:'Rice is a ______.', a:'food', b:'thing', c:'rabbit', d:'animal', cor:'a', lvl:1},
  	  {text:'Good is the opposite of ______.', a:'justice', b:'cruel', c:'evil', d:'horror', cor:'c', lvl:2},
  	  {text:'A car is a ______.', a:'animal', b:'food', c:'vehicle', d:'boat', cor:'c', lvl:1},
- 	  {text:'A teacher teaches ______.', a:'students', b:'friends', c:'colleagues', d:'people', cor:'a', lvl:1}
+ 	  {text:'A teacher teaches ______.', a:'students', b:'friends', c:'colleagues', d:'people', cor:'a', lvl:1},
+ 	  {text:'Anger is most similar to _____.', a:'happiness', b:'frustration', c:'rage', d:'sadness', cor:'c', lvl:4},
+ 	  {text:'Orange is both a _____ and _____.', a:'fruit, place', b:'fruit, color', c:'color, name', d:'vegetable, food', cor:'b', lvl:2}
 
 ]
 

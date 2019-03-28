@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>GiveEdu Vocab</title>
 	<link rel="stylesheet" href="jquery/jquery.mobile-1.1.2.min.css" />
+	<link rel="stylesheet" href="vocabstyles.css" />
 	<script src="jquery/jquery-1.7.2.min.js"></script>
 	<script src="jquery/jquery.mobile-1.1.2.min.js"></script>
 </head>
@@ -16,9 +17,9 @@
 	</div>
 
 	<div data-role="content">
-		<center><h2>Welcome</h2></center>
+		<h2 class="tcenter">Welcome</h2>
 
-		<center><img src="images/logo.JPG" alt="GiveEdu" height="200" width="200"></center>
+		<img src="images/logo.JPG" class="icenter" alt="GiveEdu" height="200" width="200">
 
 		<p>Are you looking to improve your english? Do you want to increase your vocabulary?</p>
 		<p><i>GiveEdu Vocab</i> is a mobile web application that will allow you to learn and practice new vocabulary with multiple choice questions. These vocabulary questions have different difficulty levels, which can be found on the study <a href="#page-questions">page</a>. The range of words used in the app stretches across many different topics, such as colors, transportation, business, technology, and much more. For more information about <i>GiveEdu</i>, visit the <a href="#page-about">about</a> page.</p>
@@ -45,11 +46,11 @@
 
 	<div data-role="content">
 		<div id="questions-answer-result"></div>
-		<center><h2>Study</h2></center>
-		<center><p>Please answer the question below:</p></center>
-		<center>
+		  <div class="tcenter">
+		    <h2>Study</h2>
+			<p>Please answer the question below:</p>
 			<p><b>Question: </b><b id="questions-text">Question Text</b></p>
-		</center>
+		  </div>
 		<form>
 			<label for="questions-choice-a" ><div id="questions-choice-text-a">A</div></label>
 			<input type="radio" name="questions-choice" id="questions-choice-a">
@@ -64,15 +65,15 @@
 		<button class="ui-btn" id="questions-choice-submit">Check Answer</button>
 		<form>
 			<div class="ui-field-contain">
+				<p class="tcenter"><b>Level:</b></p>
 				<center>
-					<p><b>Level:</b></p>
-				<select name="select-question-level" id="select-question-level">
+				 <select name="select-question-level" id="select-question-level">
 					<option value="1">Level 1</option>
 					<option value="2">Level 2</option>
 					<option value="3">Level 3</option>
 					<option value="4">Level 4</option>
-				</select>
-			  </center>
+				 </select>
+			   </center>
 			</div>
 		</form>
 		<h3>How to Use</h3>
@@ -101,8 +102,8 @@
 	</div>
 
 	<div data-role="content">
-		<center><h2>About</h2></center>
-		<center><img src="images/colored_logo.JPG" style="border-radius: 20px;" alt="GiveEdu" height="150" width="150"></center>
+		<h2 class="tcenter">About</h2>
+		<img src="images/colored_logo.JPG" class="icenter" style="border-radius: 20px;" alt="GiveEdu" height="150" width="150">
 		<p>This page contains details about our organization, the app, and more.</p>
 		<h3>The Organization</h3>
 		<p><i>GiveEdu</i> is a NGO (Non-governmental Organization) devoted to providing highly accessible education to impoverished areas through online and mobile devices. GiveEdu is dedicated to creating and writing applications that make study materials and learning accessible to any person in any area of the world. GiveEdu is an international organization, which produces and distributes educational apps around the world via the web.</p>
