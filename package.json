@@ -20,8 +20,8 @@
     "study",
     "edutech"
   ],
-  "author": "Joshua Weinstein",
-  "license": "AGPL-3.0-only",
+  "author": "GiveEdu",
+  "license": "AGPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/giveedu/vocab/issues"
   },
