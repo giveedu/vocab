@@ -16,10 +16,12 @@
     "learning",
     "nonprofit",
     "charity",
-    "edu"
+    "edu",
+    "study",
+    "edutech"
   ],
   "author": "Joshua Weinstein",
-  "license": "ISC",
+  "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/giveedu/vocab/issues"
   },
