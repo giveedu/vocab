@@ -94,7 +94,9 @@
  	  	lvl:4
  	  },
  	  {text:'Evening is never in the ______.', a:'night', b:'morning', c:'dusk', d:'twilight', cor:'b', lvl:4},
+ 	  {text:'Morning is never in the ______.', a:'night', b:'morning', c:'dusk', d:'twilight', cor:'a', lvl:3},
  	  {text:'A kitten is a ______.', a:'dog', b:'farm', c:'rat', d:'cat', cor:'d', lvl:2},
+ 	  {text:'A fish is an ______.', a:'dog', b:'animal', c:'rat', d:'cat', cor:'b', lvl:2},
  	  {text:'Running is similar to _______.', a:'jogging', b:'walking', c:'crying', d:'pacing', cor:'b', lvl:4},
  	  {text:'Love means _____.', a:'like', b:'want', c:'hate', d:'despise', cor:'a', lvl:3},
  	  {text:'Rice is a ______.', a:'food', b:'thing', c:'rabbit', d:'animal', cor:'a', lvl:1},

@@ -1,6 +1,6 @@
 {
   "name": "@giveedu/vocab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A free mobile web application that teaches english vocabulary",
   "main": "index.js",
   "scripts": {
